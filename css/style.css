@@ -1,0 +1,115 @@
+/* General page settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d; /* dark space background */
+    color: #fff;
+    overflow: hidden; /* hides scrollbars for canvas view */
+}
+
+/* Heading for pages */
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 10;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* Spider web canvas fills the page */
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Tooltip for nodes */
+.node-tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    pointer-events: none;
+    color: #0ff;
+    box-shadow: 0 0 10px #0ff;
+}
+
+/* Buttons (login, edit, etc.) */
+button {
+    font-size: 16px;
+    padding: 8px 14px;
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0ff;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cfcf;
+    transform: scale(1.05);
+}
+
+/* World page elements */
+#world-title {
+    font-size: 2rem;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow: 0 0 10px #fff;
+}
+
+#world-premise, #world-owner {
+    font-size: 1.2rem;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Edit button for world owners/admin */
+#edit-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #ff0;
+    color: #000;
+}
+
+#edit-btn:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
+
+/* Optional: glowing effect for nodes */
+.glow {
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+/* Login form */
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.85);
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #0ff;
+}
+
+.login-form input {
+    display: block;
+    width: 200px;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+.login-form button {
+    width: 100%;
+}
